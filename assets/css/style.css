@@ -1,0 +1,277 @@
+body{
+	margin:0 auto;
+    max-width: 75em;
+    font-family: "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 1em 1em;
+    background-color: #D2D7DF;
+}
+
+#menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #92B1E3;
+    padding: 20px;
+}
+nav{
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #92B1E3;
+    padding: 20px;
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    background-color: #3C495E;
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 0.5em;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    
+    
+}
+#menu button img{
+    width: 2em;
+    padding: 1px;
+    
+}
+ button{
+    margin-top: 10px;
+    cursor: pointer;
+}
+ button:hover{
+    background-color: #3C495E;
+    color:#D2D7DF;
+    
+}
+
+#menu img{
+    width: 6em;
+    margin: 0;
+    border-radius: 150px;
+
+}
+
+ul{
+    padding: 0%;
+    list-style-type: none;
+}
+
+nav a {
+    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+
+h1{
+    margin: auto;
+    width: 50%;
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+
+}
+
+#newsletter{
+    background-color: #92B1E3;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    align-items: center;
+    
+}
+
+article img{
+    width: 8em;
+    margin: 0;
+    
+}
+:root{
+    --bg-color-article: #92B1E3;
+    --post-nav-color : #3C495E;
+    --copyright-color: #A1A5AB;
+    --admin-color: #595B5E;
+}
+article{
+    display: flex;
+  
+    justify-content:  space-around;
+    align-items: center;
+    background-color: var(--bg-color-article);
+    padding: 1em;
+    margin: 1em;
+    column-gap: 10px;
+}
+
+#posts, #posts_2{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    gap: 5px;
+}
+
+#posts_2 article{
+    display: grid;
+}
+#posts_2 a{
+    font-size: 20px;
+    padding:10px 170px 10px 170px;
+    display:inline-block;
+}
+#posts_2 article button{
+    max-width: 100%;
+}
+#posts article:first-child{
+    grid-column: 1/2;
+}
+
+@media all and (min-width: 768px){
+    #posts_2 article{
+        flex-direction: row;
+    }
+    
+}
+
+#posts article:first-child{
+    grid-column: 1/2;
+}
+
+
+#post-nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0 auto;
+    color: #D2D7DF;
+    gap: 5px;
+}
+
+#post-nav div{
+    display: flex;
+    background-color: var(--post-nav-color);
+    flex-wrap:wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#post-nav div a{
+    color:#D2D7DF;
+}
+
+footer{
+    display: flex;
+    bottom: 0;
+    justify-content: center;
+    
+    background-color: var(--copyright-color);
+    margin-top: 10px;
+    padding: 10px;
+    
+}
+
+#admin-login{
+   
+    background-color: var(--admin-color);
+    justify-content: center;
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 20px;
+
+
+}
+
+form p{
+    display: none;
+}
+
+form input.error{
+    border: 3px red;
+    background-color: rgb(255, 0, 0, 0.1);
+}
+#admin-login form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+@media all and (min-width: 768px){
+    #posts, #posts_2, #posts_3{
+        grid-template-columns: 1fr 1fr;
+        width: 768px;
+    }
+    #posts article:first-child{
+        grid-column: 1/3;
+    }
+    #post-nav{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 768px;
+    }
+    #menu{
+        flex-direction: row;
+
+    }
+    nav ul, #menu{
+        
+        flex-direction: row; 
+        flex-wrap: wrap;
+        
+    }
+    #post-nav div:last-child ul li a{
+        padding: 1em 2em;
+    }
+
+    #menu img{
+        width: 8em;
+        margin: 0;
+        border-radius: 150px;
+    }
+    nav{
+        display: flex;
+    }
+
+    
+    nav + #hide-menu{
+        display: none;
+    }
+    #admin-login{
+        display: grid;
+    }
+}
+
+@media all and (min-width: 992px){
+    #posts, #posts_2, #posts_3{
+        grid-template-columns: 1fr 1fr;
+        width: 992px;
+    }
+    
+    #post-nav{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 992px;
+    }
+    nav{
+        display: flex;
+    }
+}

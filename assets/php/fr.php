@@ -1,0 +1,36 @@
+<?php 
+
+$trad = [
+    "home" => "Accueil",
+    "products" => "Cours",
+    "blog" => "Blog",
+    "about" => "A propos",
+    "admin" => "Admin",
+    "add article" => "Ajouter article",
+    "add product" => "Ajouter produit",
+    "add" => "Ajouter",
+    "price" => "Prix",
+    "description" => "Description",
+    "edit articles" => "Modifier les articles",
+    "our blog" => "Notre blog",
+    "title" => "Titre",
+    "action" => "Action",
+    "edit" => "Modifier",
+    "delete" => "Supprimer",
+    "article" => "Article", 
+    "subscribe" => "S'incrire",
+    "subscribe to the newsletter" => "Inscrivez-vous à notre newsletter!",
+    "contact" => "Contact",
+    "navigation" => "Navigation",
+    "social media" => "Réseaux sociaux",
+    "your email" => "Votre email:", 
+    "password" => "Mot de passe:",
+    "editing" => "Modification",
+    "author" => "Auteur",
+    "text" => "Texte",
+    "publish" => "Publier",
+    "buy" => "Acheter",
+    "heading" => "Titre",
+    "register" => "S'enrôler"
+
+];
